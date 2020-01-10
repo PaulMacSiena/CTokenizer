@@ -1,0 +1,22 @@
+int a[10];
+int i;
+int x = 0;
+
+void main(int argc, char *argv[]) {
+    fillarray(a);
+    printarray(a);
+}
+
+void fillarray(){
+    for(i=0; i<sizeof(a); i++){
+        a[i] = x;
+        x++;
+    }
+}
+ 
+void printarray(int a){
+    for(i=0;i<sizeof(a);i++){
+        while((sizeof(a) != 0) && ((sizeof(a) <= 10) || (sizeof(a) >=1))){
+            printf("%d", a[i]);
+        }
+    }
